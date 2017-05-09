@@ -13,6 +13,16 @@
 		73812A281EC16FF600D3B359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73812A271EC16FF600D3B359 /* Assets.xcassets */; };
 		73812A2B1EC16FF600D3B359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73812A291EC16FF600D3B359 /* LaunchScreen.storyboard */; };
 		73812A361EC16FF700D3B359 /* TaskDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73812A351EC16FF700D3B359 /* TaskDemoTests.swift */; };
+		73812A441EC1706E00D3B359 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73812A401EC1706E00D3B359 /* UseCase.swift */; };
+		73812A451EC1706E00D3B359 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73812A401EC1706E00D3B359 /* UseCase.swift */; };
+		73812A461EC1706E00D3B359 /* UseCaseCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73812A411EC1706E00D3B359 /* UseCaseCallback.swift */; };
+		73812A471EC1706E00D3B359 /* UseCaseCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73812A411EC1706E00D3B359 /* UseCaseCallback.swift */; };
+		73812A481EC1706E00D3B359 /* UseCaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73812A421EC1706E00D3B359 /* UseCaseHandler.swift */; };
+		73812A491EC1706E00D3B359 /* UseCaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73812A421EC1706E00D3B359 /* UseCaseHandler.swift */; };
+		73812A4A1EC1706E00D3B359 /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73812A431EC1706E00D3B359 /* UseCaseProtocol.swift */; };
+		73812A4B1EC1706E00D3B359 /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73812A431EC1706E00D3B359 /* UseCaseProtocol.swift */; };
+		73812A4F1EC17FA000D3B359 /* GetHelloWorldTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73812A4E1EC17FA000D3B359 /* GetHelloWorldTask.swift */; };
+		73812A501EC17FA000D3B359 /* GetHelloWorldTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73812A4E1EC17FA000D3B359 /* GetHelloWorldTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,11 @@
 		73812A311EC16FF700D3B359 /* TaskDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73812A351EC16FF700D3B359 /* TaskDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDemoTests.swift; sourceTree = "<group>"; };
 		73812A371EC16FF700D3B359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73812A401EC1706E00D3B359 /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		73812A411EC1706E00D3B359 /* UseCaseCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseCallback.swift; sourceTree = "<group>"; };
+		73812A421EC1706E00D3B359 /* UseCaseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseHandler.swift; sourceTree = "<group>"; };
+		73812A431EC1706E00D3B359 /* UseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseProtocol.swift; sourceTree = "<group>"; };
+		73812A4E1EC17FA000D3B359 /* GetHelloWorldTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHelloWorldTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +94,8 @@
 			children = (
 				73812A201EC16FF600D3B359 /* AppDelegate.swift */,
 				73812A221EC16FF600D3B359 /* ViewController.swift */,
+				73812A4C1EC1709700D3B359 /* UseCase Core */,
+				73812A4D1EC17F6400D3B359 /* demo */,
 				73812A241EC16FF600D3B359 /* Main.storyboard */,
 				73812A271EC16FF600D3B359 /* Assets.xcassets */,
 				73812A291EC16FF600D3B359 /* LaunchScreen.storyboard */,
@@ -94,6 +111,25 @@
 				73812A371EC16FF700D3B359 /* Info.plist */,
 			);
 			path = TaskDemoTests;
+			sourceTree = "<group>";
+		};
+		73812A4C1EC1709700D3B359 /* UseCase Core */ = {
+			isa = PBXGroup;
+			children = (
+				73812A401EC1706E00D3B359 /* UseCase.swift */,
+				73812A411EC1706E00D3B359 /* UseCaseCallback.swift */,
+				73812A421EC1706E00D3B359 /* UseCaseHandler.swift */,
+				73812A431EC1706E00D3B359 /* UseCaseProtocol.swift */,
+			);
+			name = "UseCase Core";
+			sourceTree = "<group>";
+		};
+		73812A4D1EC17F6400D3B359 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				73812A4E1EC17FA000D3B359 /* GetHelloWorldTask.swift */,
+			);
+			name = demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73812A441EC1706E00D3B359 /* UseCase.swift in Sources */,
+				73812A4A1EC1706E00D3B359 /* UseCaseProtocol.swift in Sources */,
 				73812A231EC16FF600D3B359 /* ViewController.swift in Sources */,
+				73812A461EC1706E00D3B359 /* UseCaseCallback.swift in Sources */,
+				73812A4F1EC17FA000D3B359 /* GetHelloWorldTask.swift in Sources */,
+				73812A481EC1706E00D3B359 /* UseCaseHandler.swift in Sources */,
 				73812A211EC16FF600D3B359 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +252,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				73812A361EC16FF700D3B359 /* TaskDemoTests.swift in Sources */,
+				73812A501EC17FA000D3B359 /* GetHelloWorldTask.swift in Sources */,
+				73812A471EC1706E00D3B359 /* UseCaseCallback.swift in Sources */,
+				73812A491EC1706E00D3B359 /* UseCaseHandler.swift in Sources */,
+				73812A451EC1706E00D3B359 /* UseCase.swift in Sources */,
+				73812A4B1EC1706E00D3B359 /* UseCaseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
